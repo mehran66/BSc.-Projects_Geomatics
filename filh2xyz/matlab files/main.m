@@ -1,0 +1,48 @@
+clc;clear all;format short
+a = 6378137.000000 ;      
+b = 6356752.314245; 
+fprintf('What do you want to do ?');
+ans=input('1.curvelinear2cartesian or 2.cartesian2curvelinear :');
+if ans==1
+    l1=input('Where is your point N:North or S:South:','s');
+    Fideg=input('Input FI(degree part):'); 
+    Fimin=input('Input FI(minute part):');
+    Fisecond=input('Input FI(second part)(with 3 float number):');
+    l2=input('Where is your point E:East or W:West:','s');
+    Lambdadeg=input('Input Lambda(degree part):'); 
+    Lambdamin=input('Input Lambda(minute part):');
+    Lambdasecond=input('Input Lambda(second part)(with 3 float number):');
+    h=input('Input h:');
+    if l1=='N'
+        Fi=(Fideg+Fimin/60+Fisecond/3600)*pi/180;
+    end
+    if l1=='S'
+        Fi=-(Fideg+Fimin/60+Fisecond/3600)*pi/180;
+    end
+    if l2=='E'
+        Lambda=(Lambdadeg+Lambdamin/60+Lambdasecond/3600)*pi/180;
+    end
+    if l2=='W'
+        Lambda=-(Lambdadeg+Lambdamin/60+Lambdasecond/3600)*pi/180;
+    end
+    [X,Y,Z]= fil2xyz(Fi,Lambda,h)     
+end 
+if ans==2
+    disp('You can select 3 methods:');
+    l3=input('1.First itterative methode 2.Close form 3.Bowring methode :');
+    X=input('Input X:');
+    Y=input('Input Y:');
+    Z=input('Input Z:');
+    if l3==1
+        [Fi,Lambda,h]=xyz2filh1(X,Y,Z)
+    end
+    if l3==2
+        [Fi,Lambda,h]=xyz2filh2(X,Y,Z)
+    end
+    if l3==3
+        [Fi,Lambda,h]=xyz2filhBowring(X,Y,Z)
+    end
+end
+
+
+    

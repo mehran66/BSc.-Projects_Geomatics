@@ -1,0 +1,7 @@
+clc;clear all;
+for i=1:100
+    Fi0=randint(1,1,[0,90]);
+    Lamda0=randint(1,1,[0,90]);
+    h0=rqndint(1,1,[-1000,10000]);
+end
+[X,Y,Z]= fil2xyz(Fi0,Lambda0,h0)
