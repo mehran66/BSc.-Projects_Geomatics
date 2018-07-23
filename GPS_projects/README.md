@@ -1,7 +1,7 @@
-Following GPS projects:
-GPS Almanak calculations
-CA code generator
-DUT time convertor
-GPS network
-ICRF to IERF conversion
-GPS time convertor
+Following GPS projects:<br />
+GPS Almanak calculations<br />
+CA code generator<br />
+DUT time convertor<br />
+GPS network<br />
+ICRF to IERF conversion<br />
+GPS time convertor<br />
