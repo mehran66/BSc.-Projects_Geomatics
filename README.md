@@ -1,2 +1,2 @@
-# BSc.-Projects_Geomatics
+# BSc. Projects_Geomatics
 Course projects in my bachelor (Civil Surveying)
