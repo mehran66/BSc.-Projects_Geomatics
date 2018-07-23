@@ -1,0 +1,186 @@
+
+          ************************************************************
+          **                                                        **
+          **                M O V E 3  Version 3.3.0                **
+          **                                                        **
+          **                 Design and Adjustment                  **
+          **                           of                           **
+          **             3D 2D and 1D Geodetic Networks             **
+          **                                                        **
+          **                     www.MOVE3.com                      **
+          **                 (c) 1993-2004 Grontmij                 **
+          **            Licensed to Leica Geosystems AG             **
+          **                                                        **
+          ** gps_project                                            **
+          **                                    11-03-2010 02:45:14 **
+          ************************************************************
+
+
+3D inner constrained network on WGS 84 ellipsoid
+
+STATIONS
+
+Number of (partly) known stations           0
+Number of unknown stations                  5
+                                   Total    5
+
+OBSERVATIONS
+
+GPS coordinate differences                 24  (8 baselines)
+Inner Constraints                           3
+                                   Total   27
+
+UNKNOWNS
+
+Coordinates                                15
+                                   Total   15
+
+Degrees of freedom                         12
+
+ADJUSTMENT
+
+Number of iterations                        1
+Max coord correction in last iteration      0.0000 m
+
+TESTING
+
+Alfa (multi dimensional)                    0.3362
+Alfa 0 (one dimensional)                    0.0500
+Beta                                        0.80
+Critical value W-test                       1.96
+Critical value T-test (3 dimensional)       1.89
+Critical value T-test (2 dimensional)       2.42
+Critical value F-test                       1.12
+
+F-test                                      0.763  accepted
+
+Results based on a-posteriori variance factor
+
+ELLIPSOID CONSTANTS
+
+Ellipsoid                                WGS 84
+Semi major axis                          6378137.0000 m
+Inverse flattening                      298.257223563
+
+COORDINATES (INNER CONSTRAINED NETWORK)
+
+      Station                          Coordinate         Corr          Sd
+
+          309  Latitude          47 23 42.10994 N       0.1324      0.0016 m  
+               Longitude          9 39 06.74628 E      -0.0932      0.0009 m  
+               Height                    454.3345       0.2486      0.0027 m  
+          311  Latitude          47 23 12.42790 N      -0.0728      0.0024 m  
+               Longitude          9 38 14.81024 E       0.1512      0.0014 m  
+               Height                    454.5888      -0.4109      0.0038 m  
+          315  Latitude          47 23 02.50214 N      -0.0711      0.0015 m  
+               Longitude          9 38 20.11786 E       0.1502      0.0009 m  
+               Height                    461.0313      -0.4141      0.0026 m  
+          401  Latitude          47 23 33.27893 N       0.1331      0.0015 m  
+               Longitude          9 40 04.09886 E      -0.0955      0.0010 m  
+               Height                    456.2688       0.2491      0.0032 m  
+          402  Latitude          47 22 45.11411 N      -0.1215      0.0019 m  
+               Longitude          9 40 13.25285 E      -0.1129      0.0010 m  
+               Height                    459.9560       0.3274      0.0031 m  
+
+ABSOLUTE STANDARD ELLIPSES
+
+      Station        A        B       A/B  Phi       Sd Hgt
+
+          309   0.0016   0.0009 m     1.8    7 deg   0.0027 m  
+          311   0.0024   0.0014 m     1.7    4 deg   0.0038 m  
+          315   0.0015   0.0009 m     1.7    0 deg   0.0026 m  
+          401   0.0015   0.0010 m     1.5    0 deg   0.0032 m  
+          402   0.0019   0.0010 m     1.9    0 deg   0.0031 m  
+
+ADJUSTED OBSERVATIONS
+
+          Station        Target       Adj obs      Resid Resid(ENH)        Sd
+
+DX            402           401    -1049.4117    -0.0014    -0.0033    0.0033 m  
+DY                                  -373.5735    -0.0036    -0.0005    0.0015 m  
+DZ                                  1004.4602    -0.0029    -0.0035    0.0039 m  
+DX            402           315        9.1422    -0.0012     0.0011    0.0035 m  
+DY                                 -2405.8059     0.0009     0.0013    0.0017 m  
+DZ                                   364.4215     0.0008    -0.0001    0.0040 m  
+DX            402           309    -1046.7726     0.0036     0.0042    0.0033 m  
+DY                                 -1593.2469     0.0049     0.0000    0.0016 m  
+DZ                                  1187.6741     0.0048     0.0065    0.0041 m  
+DX            309           315     1055.9148    -0.0021    -0.0008    0.0031 m  
+DY                                  -812.5590    -0.0012     0.0029    0.0016 m  
+DZ                                  -823.2525     0.0018    -0.0002    0.0037 m  
+DX            309           311      847.8350     0.0040     0.0017    0.0039 m  
+DY                                  -960.8210     0.0024    -0.0013    0.0021 m  
+DZ                                  -620.4344     0.0029     0.0050    0.0048 m  
+DX            315           401    -1058.5539     0.0009     0.0016    0.0037 m  
+DY                                  2032.2324     0.0018     0.0014    0.0017 m  
+DZ                                   640.0387     0.0034     0.0034    0.0039 m  
+DX            315           311     -208.0798    -0.0032    -0.0009    0.0038 m  
+DY                                  -148.2620    -0.0015     0.0017    0.0019 m  
+DZ                                   202.8181    -0.0012    -0.0032    0.0036 m  
+DX            401           309        2.6391     0.0002    -0.0023    0.0032 m  
+DY                                 -1219.6734    -0.0023     0.0007    0.0015 m  
+DZ                                   183.2138     0.0009     0.0005    0.0036 m  
+
+GPS BASELINE VECTOR RESIDUALS
+
+          Station        Target    Adj vector      Resid        Resid ppm
+
+DV            402           401     1499.9208     0.0048 m        3.2 ppm
+DV            402           315     2433.2671     0.0018 m        0.7 ppm
+DV            402           309     2246.0495     0.0077 m        3.4 ppm
+DV            309           315     1566.1905     0.0030 m        1.9 ppm
+DV            309           311     1423.7064     0.0055 m        3.8 ppm
+DV            315           401     2379.1079     0.0040 m        1.7 ppm
+DV            315           311      326.2116     0.0037 m       11.4 ppm
+DV            401           309     1233.3603     0.0024 m        2.0 ppm
+
+TEST OF OBSERVATIONS
+
+          Station        Target        MDB      Red    BNR   W-test    T-test  
+
+DX            402           401     0.0156 m     40    3.3     0.67      2.80**
+DY                                  0.0082 m     41    3.4    -2.79**          
+DZ                                  0.0189 m     47    2.9    -0.50            
+DX            402           315     0.0165 m     51    2.9    -0.77      0.33  
+DY                                  0.0088 m     50    2.8     0.76            
+DZ                                  0.0198 m     47    3.0     0.46            
+DX            402           309     0.0164 m     59    2.2     0.06      1.92**
+DY                                  0.0086 m     61    2.3     2.17**          
+DZ                                  0.0220 m     68    1.9     0.07            
+DX            309           315     0.0162 m     59    2.3    -0.42      0.31  
+DY                                  0.0084 m     63    2.3    -0.65            
+DZ                                  0.0197 m     64    2.2     0.71            
+DX            309           311     0.0204 m     45    2.9     0.81      0.59  
+DY                                  0.0103 m     53    2.8     0.71            
+DZ                                  0.0292 m     81    2.0    -0.31            
+DX            315           401     0.0178 m     72    2.2    -0.58      0.48  
+DY                                  0.0096 m     66    2.0     0.75            
+DZ                                  0.0180 m     51    2.8     0.88            
+DX            315           311     0.0204 m     35    4.5    -0.81      0.59  
+DY                                  0.0103 m     29    4.4    -0.71            
+DZ                                  0.0292 m      8    8.4     0.31            
+DX            401           309     0.0149 m     39    4.7     0.15      1.49  
+DY                                  0.0080 m     37    3.6    -2.10**          
+DZ                                  0.0174 m     33    5.0     0.39            
+
+
+ESTIMATED ERRORS FOR OBSERVATIONS WITH REJECTED W-TESTS (max 10)
+
+Record          Station        Target   W-test   Fact         Est err
+
+1      DY           402           401    -2.79    1.4         -0.0082 m  
+3      DY           402           309     2.17    1.1          0.0067 m  
+8      DY           401           309    -2.10    1.1         -0.0060 m  
+
+ESTIMATED ERRORS FOR OBSERVATIONS WITH REJECTED T-TESTS (max 10)
+
+Record          Station        Target   T-test   Fact         Est err
+
+1      DX           402           401     2.80    1.2         -0.0030 m  
+       DY                                                     -0.0087 m  
+       DZ                                                     -0.0063 m  
+3      DX           402           309     1.92    1.0          0.0061 m  
+       DY                                                      0.0080 m  
+       DZ                                                      0.0070 m  
+
+[End of file]

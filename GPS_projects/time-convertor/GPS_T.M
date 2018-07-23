@@ -1,0 +1,14 @@
+function [TOW,DOW,Week] = GPS_T(JD)
+ %purpose:
+%      julian date ---> gps week number and time of week (seconds).
+%inputs:
+%       jd         :  julian date 
+%outputs:
+%        tow        : time of week (seconds).
+%        week       : gps week number
+
+Day=(JD-2444244.5);
+Week = floor(Day/7);
+DOW = floor(mod(Day,7));% -------------------- Day of week
+TOW = (Day-Week*7)*86400;% ----------------- Seconds of Week
+Week = floor(Day/7)-1024;% ------------- Week of GPS
