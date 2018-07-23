@@ -1,4 +1,4 @@
-- Following GPS projects
+Following GPS projects:
 GPS Almanak calculations
 CA code generator
 DUT time convertor
